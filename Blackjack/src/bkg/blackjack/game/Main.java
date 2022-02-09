@@ -1,13 +1,12 @@
 package bkg.blackjack.game;
 
-import bkg.blackjack.players.Players;
+import bkg.blackjack.players.Dealer;
 
 public class Main {
 
 	public static void main(String[] args) {
-		Players player = new Players();
-		// List<String> cards = new ArrayList<>();
+		Dealer dealer = new Dealer();
+		System.out.println("Welcome! What is your name?");
 
 	}
-
 }

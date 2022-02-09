@@ -1,19 +1,16 @@
 package bkg.blackjack.players;
 
+import bkg.blackjack.currency.Bet;
+import bkg.blackjack.currency.Chips;
 import bkg.blackjack.game.Hand;
 
-public class Players {
+public abstract class Players {
 	// class variable to keep track of total number of players in the game
 	private static int numOfParticipants;
-	private Hand hand;
 	private String name;
-
-	public Players(String name) {
-		setNumOfParticipants(getNumOfParticipants() + 1);
-		this.setHand(new Hand());
-		this.setName(name);
-
-	}
+	private Bet bet;
+	private Chips chips;
+	private Hand hand;
 
 	public static int getNumOfParticipants() {
 		return numOfParticipants;
@@ -38,5 +35,4 @@ public class Players {
 	public void setName(String name) {
 		this.name = name;
 	}
-
 }

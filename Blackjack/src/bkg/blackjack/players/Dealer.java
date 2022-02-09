@@ -1,11 +1,12 @@
 package bkg.blackjack.players;
 
-public class Dealer extends Players {
+import bkg.blackjack.game.Hand;
+
+public class Dealer {
 	private static final String name = "Dealer";
+	private Hand hand;
 
 	public Dealer() {
-		super(name);
-		// TODO Auto-generated constructor stub
+		hand = new Hand();
 	}
-
 }
