@@ -2,7 +2,7 @@ package bkg.blackjack.players;
 
 import java.util.Random;
 
-public class Automated extends Players {
+public class Automated extends Player {
 
 	// Name pool for automated players
 	String[] namePool = new String[] { "Bob", "Mary", "Steve", "Jill", "Jim", "Ann", "John", "Elizabeth", "Nixon",
@@ -13,7 +13,6 @@ public class Automated extends Players {
 	int i = rand.nextInt(12);
 
 	public Automated() {
-		super.setName(namePool[i]);
-		setNumOfParticipants(getNumOfParticipants() + 1);
+		this.setName(namePool[i]);
 	}
 }
