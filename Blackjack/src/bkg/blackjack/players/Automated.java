@@ -13,6 +13,6 @@ public class Automated extends Player {
 	int i = rand.nextInt(12);
 
 	public Automated() {
-		this.setName(namePool[i]);
+		this.name = namePool[i];
 	}
 }

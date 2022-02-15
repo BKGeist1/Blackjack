@@ -42,4 +42,9 @@ public abstract class Player {
 	public void setBet(Bet bet) {
 		this.bet = bet;
 	}
+
+	@Override
+	public String toString() {
+		return name;
+	}
 }

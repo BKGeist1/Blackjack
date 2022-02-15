@@ -15,13 +15,23 @@ public class Main {
 		List<Player> seats = new ArrayList<Player>();
 		Scanner myScanner = new Scanner(System.in);
 		Dealer dealer = new Dealer();
-		System.out.println("Welcome! What is your name?");
-		String name = myScanner.nextLine();
-		if (name == "") {
-			Automated automatedPlayer = new Automated();
-		} else {
-			Human humanPlayer = new Human(name);
-		}
+		do {
+			System.out.println("Welcome! What is your name?");
+			String name = myScanner.nextLine();
+
+			if (name == "") {
+				Automated automatedPlayer = new Automated();
+				seats.add(automatedPlayer);
+				automatedPlayer.toString1(automatedPlayer);
+			} else {
+				Human humanPlayer = new Human(name);
+				seats.add(humanPlayer);
+			}
+		} while (seats.size() < 7);
+
+		System.out.println("seats : " + seats.toString());
+
+		myScanner.close();
 
 	}
 }
