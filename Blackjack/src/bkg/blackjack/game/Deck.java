@@ -31,4 +31,16 @@ public enum Deck {
 		this.alternateAmount = 0;
 	}
 
+	public int getAlternateAmount() {
+		return alternateAmount;
+	}
+
+	public int getAmount() {
+		return amount;
+	}
+
+	public String getCard() {
+		return card;
+	}
+
 }
