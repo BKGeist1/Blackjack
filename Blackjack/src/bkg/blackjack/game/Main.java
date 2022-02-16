@@ -22,7 +22,6 @@ public class Main {
 			if (name == "") {
 				Automated automatedPlayer = new Automated();
 				seats.add(automatedPlayer);
-				automatedPlayer.toString1(automatedPlayer);
 			} else {
 				Human humanPlayer = new Human(name);
 				seats.add(humanPlayer);
